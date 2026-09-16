@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Silva - Portfólio Técnico</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --card-bg: #fff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: var(--card-bg);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+        }
+
+        .contact-info a, .contact-info span {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-size: 1.3rem;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-date {
+            font-size: 0.85rem;
+            color: #666;
+            font-weight: bold;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .item-subtitle {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .sidebar {
+            border-right: 1px solid #eee;
+            padding-right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                border-right: none;
+                padding-right: 0;
+            }
+        }
+
+        .bio {
+            background: #eef2f3;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>José Silva</h1>
+            <h2>Técnico Eletrotécnico & Engenheiro de Computação</h2>
+            <div class="contact-info">
+                <span>📞 (11) 98929-3096</span>
+                <span>📧 ivan.geraldo@gmail.com</span>
+                <span>📍 São Paulo - SP</span>
+                <span>🔗 <a href="https://www.linkedin.com/in/joseivangeraldo/" target="_blank">LinkedIn</a></span>
+            </div>
+        </header>
+
+        <main>
+            <!-- Coluna Esquerda: Resumo, Habilidades, Idiomas, Cursos -->
+            <div class="sidebar">
+                <section>
+                    <h3>Perfil</h3>
+                    <div class="bio">
+                        Profissional com mais de 18 anos de experiência em técnico eletrotécnico industrial com pleno domínio em CLP's Siemens, Rockwell, Supervisórios e linguagem de máquinas[cite: 1]. Treinamentos no Brasil e Itália[cite: 1]. Passagem por grandes empresas como Tetra Pak, Suzano, Saint Gobain, MTP e Tower Automotive[cite: 1].
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Habilidades</h3>
+                    <ul>
+                        <li>Programação de CLPs, linguagem de máquina, parametrização de sistemas[cite: 1]</li>
+                        <li>Pleno Domínio em CLP's Siemens S5, S7[cite: 1]</li>
+                        <li>IHM'S, Rockwell e Supervisórios[cite: 1]</li>
+                        <li>Conhecimentos em ASP, C++, PHP, MySQL, C[cite: 1]</li>
+                        <li>Conhecimento em Python 3[cite: 1]</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li><strong>Inglês:</strong> Avançado (Leitura)[cite: 1]</li>
+                        <li><strong>Espanhol:</strong> Básico[cite: 1]</li>
+                        <li><strong>Italiano Técnico:</strong> Leitura e Manuais[cite: 1]</li>
+                        <li><strong>Alemão Técnico:</strong> Leitura e Manuais[cite: 1]</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Cursos e Treinamentos</h3>
+                    <div class="item">
+                        <div class="item-date">2023</div>
+                        <div class="item-title">Python Básico ao Avançado</div>
+                        <div class="item-subtitle">Udemy (Brasil)[cite: 1]</div>
+                    </div>
+                    <div class="item">
+                        <div class="item-date">2023</div>
+                        <div class="item-title">AWS Skill Builder</div>
+                        <div class="item-subtitle">Amazon Web Services[cite: 1]</div>
+                    </div>
+                    <div class="item">
+                        <div class="item-date">2015</div>
+                        <div class="item-title">Automation Course for Matrix Filler RMC-RMB</div>
+                        <div class="item-subtitle">Trainer Roberto Rizzoli (Itália)[cite: 1]</div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Coluna Direita: Experiência, Educação, Considerações -->
+            <div class="content">
+                <section>
+                    <h3>Experiência Profissional</h3>
+                    
+                    <div class="item">
+                        <div class="item-date">2018 - 2022</div>
+                        <div class="item-title">Técnico Eletricista de Manutenção Industrial</div>
+                        <div class="item-subtitle">Tower Automotive[cite: 1]</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-date">2016 - 2018</div>
+                        <div class="item-title">Técnico Eletrotécnico</div>
+                        <div class="item-subtitle">Marfinite Indústria Plástica[cite: 1]</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-date">2015 - 2016</div>
+                        <div class="item-title">Técnico Eletrotécnico</div>
+                        <div class="item-subtitle">Conexão Próteses Dentárias[cite: 1]</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-date">2014 - 2015</div>
+                        <div class="item-title">Técnico de Automação Industrial</div>
+                        <div class="item-subtitle">Tetra Pak - Sidel[cite: 1]</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-date">2013 - 2014</div>
+                        <div class="item-title">Técnico Manutenção Eletrônica Instrumentação</div>
+                        <div class="item-subtitle">Suzano Papel e Celulose[cite: 1]</div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Educação</h3>
+
+                    <div class="item">
+                        <div class="item-date">2017 - 2022</div>
+                        <div class="item-title">Engenharia da Computação</div>
+                        <div class="item-subtitle">USP - UNIVESP[cite: 1]</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-date">2015 - Presente</div>
+                        <div class="item-title">Pós-Graduação em Tecnologia da Informação</div>
+                        <div class="item-subtitle">Centro Universitário ENIAC[cite: 1]</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-date">2002 - 2006</div>
+                        <div class="item-title">Bacharel em Administração de Empresas</div>
+                        <div class="item-subtitle">Universidade São Marcos[cite: 1]</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-date">1994 - 1999</div>
+                        <div class="item-title">Técnico Eletrotécnico</div>
+                        <div class="item-subtitle">Basilides de Godoy[cite: 1]</div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Considerações Finais</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 10px;">
+                        Como recém-formado em Engenharia da Computação pela USP, trago boas habilidades adquiridas em curso, tais como tratamento de dados, segurança da informação, redes, gerenciamento de redes, linguagem de máquina, programação, algoritmos, criação de programas e automação[cite: 1].
+                    </p>
+                    <p style="font-size: 0.95rem; margin-bottom: 10px;">
+                        Com maior experiência, trabalhei no ramo industrial, voltada diretamente para programação de máquinas e manutenção elétrica, por mais de 18 anos[cite: 1].
+                    </p>
+                    <p style="font-size: 0.95rem;">
+                        A Engenharia da Computação é um desejo antigo e, ao prestar a prova da USP/UNIVESP, passei. Assim passaram 5 anos de estudos aprofundados, podendo contribuir com o crescimento da empresa e, atrelado a isso, o meu desenvolvimento[cite: 1].
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
