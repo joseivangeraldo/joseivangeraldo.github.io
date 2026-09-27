@@ -1,0 +1,4 @@
+VIEWING IN GOOGLE CLOULD CONSOLE:
+
+cd `mktemp -d` && echo '<html><body>Hello World</body></html>' >./index.html && python -m http.server 8080
+ivan_geraldo@cloudshell:~/joseivangeraldo.github.io (myproject74067)$ python -m http.server 8080
